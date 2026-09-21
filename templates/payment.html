@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BuildMart - Payment</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Build<span>Mart</span></div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cart.html">🛒 Cart</a>
+    </nav>
+</header>
+
+<section class="container">
+
+    <h2>Payment Method</h2>
+
+    <div class="calculator-box">
+
+        <label>
+            <input type="radio" name="payment" value="cod">
+            Cash on Delivery
+        </label>
+
+        <label>
+            <input type="radio" name="payment" value="online">
+            Online Payment
+        </label>
+        <label>Delivery Address</label>
+<textarea id="address" placeholder="Enter your address"></textarea>
+
+        <button onclick="placeOrder()">
+        Place Order
+        </button>
+
+    </div>
+
+</section>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>

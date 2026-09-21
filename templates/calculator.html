@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BuildMart - Material Calculator</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Build<span>Mart</span></div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cart.html">🛒 Cart</a>
+    </nav>
+</header>
+
+<section class="container">
+
+    <h2>🏗️ Construction Material Calculator</h2>
+
+    <div class="calculator-box">
+
+        <label>Site Length (ft)</label>
+        <input type="number" id="length" placeholder="Example: 40">
+
+        <label>Site Width (ft)</label>
+        <input type="number" id="width" placeholder="Example: 30">
+
+        <label>House Type</label>
+        <select id="bhk">
+            <option value="1">1 BHK</option>
+            <option value="2">2 BHK</option>
+            <option value="3">3 BHK</option>
+        </select>
+
+        <label>Number of Floors</label>
+        <select id="floors">
+            <option value="1">1 Floor</option>
+            <option value="2">2 Floors</option>
+            <option value="3">3 Floors</option>
+        </select>
+
+        <button onclick="calculateMaterials()">
+            Calculate Materials
+        </button>
+
+    </div>
+
+    <div id="result"></div>
+    <button onclick="addMaterialsToCart()">
+    🛒 Add Required Materials to Cart
+</button>
+</section>
+
+<script src="../js/script.js"></script>
+
+</body>
+
+</html>
