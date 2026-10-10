@@ -18,7 +18,7 @@ buttons.forEach(function (button) {
 
         localStorage.setItem("cart", JSON.stringify(cart));
 
-        alert(name + " added to cart!");
+        window.location.href="cart.html";
     });
 });
 function loadCart() {
@@ -295,7 +295,6 @@ if (searchBox) {
             } else {
                 product.style.display = "none";
             }
-
         });
     });
 }
